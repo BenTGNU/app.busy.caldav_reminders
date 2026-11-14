@@ -1,0 +1,42 @@
+{
+  "format_version": 1,
+  "version": 1,
+  "fields": {
+    "server_url": {
+      "label": "Calendar URL",
+      "description": "CalDAV calendar collection URL, e.g. https://host/remote.php/dav/calendars/user/personal/",
+      "type": "string",
+      "default": "",
+      "max_length": 200
+    },
+    "username": {
+      "label": "Username",
+      "type": "string",
+      "default": "",
+      "max_length": 64
+    },
+    "password": {
+      "label": "Password",
+      "description": "Use an app-specific password if your server requires one.",
+      "type": "string",
+      "default": "",
+      "max_length": 128
+    },
+    "lookahead_days": {
+      "label": "Days ahead",
+      "description": "How many days of events to read from the calendar.",
+      "type": "integer",
+      "default": 7,
+      "min": 1,
+      "max": 30
+    },
+    "refresh_minutes": {
+      "label": "Refresh (min)",
+      "description": "How often the calendar is polled.",
+      "type": "integer",
+      "default": 5,
+      "min": 1,
+      "max": 60
+    }
+  }
+}
